@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-from .models import News, AboutUs
+from .models import News, AboutUs, Reviews
 
 def homepage (request):
     news = News.objects.all()
