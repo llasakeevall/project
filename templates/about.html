@@ -1,0 +1,19 @@
+<style> 
+    a{text-decoration: none;} 
+    ul {list-style-type: none;} 
+    .menu li {display: inline-flex;padding-left: 20px;} 
+    .menu a {font-size: 20px;color: rgb(28, 87, 32);} 
+    .Doc-menu {text-align: center;} 
+    .blockGrop {display: inline-flex;}
+    .blockGrop .content {padding-left: 20px;}
+</style> 
+<div class="Doc-menu"> 
+    <ul class="menu" >
+        <li><a href='{% url 'homepage' %}'>Главная </a></li> 
+        <li><a href='{% url 'about' %}'>О нас </a></li> 
+        <li><a href='#'>Меню </a></li> 
+        <li><a href='#'>Контакты </a></li> 
+    <ul>
+</div> 
+<h1>{{about.title}}</h1>
+<p>{{about.desc}}</p>
